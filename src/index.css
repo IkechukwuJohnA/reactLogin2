@@ -2,7 +2,7 @@
 
 :root{
   --line-border-fill: #630cf1;
-  --line-border-empty: #7b868b;
+  --line-border-empty: #010a0e;
 }
 
 *{
@@ -16,15 +16,21 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgb(12, 12, 17);
   font-family: "poppins", sans-serif;
+  background: linear-gradient(
+      135deg, 
+      rgba(20, 20, 20, 1) 0%, 
+      rgba(40, 40, 40, 1) 50%, 
+      rgba(15, 15, 15, 1) 100%
+         
+    );
 }
 
 .container{
   width: 550px;
-  background-color: #c2b1cf21;
+  background-color: #dee2e1bb;
   padding: 1rem 2rem;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow-x: hidden;
 }
 
@@ -78,7 +84,7 @@ body{
 .circle.active{
   border-color: var(--line-border-empty);
   color: #ddd;
-  background-color: #0e6d1d;
+  background-color: #2b179c;
 }
 
 
@@ -97,7 +103,7 @@ body{
   color: rgb(12, 8, 1);
   padding: 4px 40px;
   border-radius: 4px;
-  background-color: #0e6d1d;
+  background-color: #2b179c;
 }
 
 .btn:active {
@@ -111,8 +117,27 @@ body{
   cursor: pointer;
   font-family: inherit;
   border-radius: 4px;
-  color: #ddd;
+  color: rgba(39, 29, 7, 0.534);
   padding: 4px 40px;
-  background-color: var(--line-border-empty);
+  background-color: #ddd;
   cursor: not-allowed;
+}
+
+
+
+.form-container h2{
+  text-align: center;
+}
+
+.form-container form input{
+  width: 94%;
+  border:  1px solid #ddd;
+  padding: 0.75rem 0.50rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+.form-container form input:focus {
+  outline: none;
 }
